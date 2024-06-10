@@ -11,14 +11,12 @@ def load_env():
     load_dotenv()
 
 
-selenoid_login = os.getenv("SELENOID_LOGIN")
-selenoid_pass = os.getenv("SELENOID_PASS")
-selenoid_url = os.getenv("SELENOID_URL")
-
-
 @pytest.fixture(scope='function', autouse=True)
 def browser_personal_settings():
     options = Options()
+    selenoid_login = os.getenv("SELENOID_LOGIN")
+    selenoid_pass = os.getenv("SELENOID_PASS")
+    selenoid_url = os.getenv("SELENOID_URL")
     selenoid_capabilities = {
         "browserName": "chrome",
         "browserVersion": "100.0",
