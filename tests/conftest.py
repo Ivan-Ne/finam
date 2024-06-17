@@ -30,7 +30,9 @@ def browser_personal_settings():
     driver = webdriver.Remote(
         command_executor=f"https://{selenoid_login}:{selenoid_pass}@{selenoid_url}/wd/hub",
         options=options)
-
+    browser.config.base_url = 'https://www.finam.ru'
+    browser.config.window_width = 1350
+    browser.config.window_height = 1000
     browser.config.driver = driver
     yield browser
     browser.quit()
