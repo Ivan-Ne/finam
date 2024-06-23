@@ -2,6 +2,7 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selene import browser
+from utils import attach
 from dotenv import load_dotenv
 import os
 
@@ -30,9 +31,14 @@ def browser_personal_settings():
     driver = webdriver.Remote(
         command_executor=f"https://{selenoid_login}:{selenoid_pass}@{selenoid_url}/wd/hub",
         options=options)
-    browser.config.base_url = 'https://www.finam.ru'
+    browser.config.base_url = ""
     browser.config.window_width = 1350
     browser.config.window_height = 1000
     browser.config.driver = driver
     yield browser
+    attach.add_html(browser)
+    attach.add_screenshot(browser)
+    attach.add_logs(browser)
+    attach.add_video(browser)
+
     browser.quit()
