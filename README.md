@@ -16,7 +16,7 @@
 - Проверка раздела "Программа лояльности"   
 - Проверка раздела "Календарь IPO"   
 
-**Используемый стэк**  
+**Используемый стэк:**  
 <p align="center">
 <img align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" height="40" width="40" />
 <img align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" height="40" width="40" />
@@ -52,11 +52,11 @@ java "-DconfigFile=notifications/config.json" -jar ../allure-notifications-4.6.1
 
 ## Пример запуска автотестов в Jenkins  
 
-**Запускаем сборку в Jenkins**
-<img align="center" src="![image](https://github.com/Ivan-Ne/finam/assets/74492605/c7434cec-e875-4191-b3c3-56eb3f1b2ea8)"/>  
+**1. Запускаем сборку в Jenkins**
+![](https://github.com/Ivan-Ne/finam/assets/74492605/6eba82c9-5925-4044-a164-4ea70772b2f7)
 
-**Отчет о запусках автотестов в Allure**
-<img align="center" src="![image](https://github.com/Ivan-Ne/finam/assets/74492605/4da4f2e6-d3c4-44d2-8926-069546da08b1)"/>  
+**2. Отчет о запусках автотестов в Allure**
+![](https://github.com/Ivan-Ne/finam/assets/74492605/884c60f5-a736-4b4d-8104-62e59de33872)  
 
-**Сообщение в Telegram** 
-<img align="center" src="![image](https://github.com/Ivan-Ne/finam/assets/74492605/c5ea9d2f-e258-45dc-96e7-4dadc5277955)"/>  
+**3. Сообщение в Telegram** 
+![](https://github.com/Ivan-Ne/finam/assets/74492605/c5ea9d2f-e258-45dc-96e7-4dadc5277955)  
