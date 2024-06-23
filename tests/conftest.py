@@ -20,10 +20,10 @@ def browser_personal_settings():
     selenoid_url = os.getenv("SELENOID_URL")
     selenoid_capabilities = {
         "browserName": "chrome",
-        "browserVersion": "100.0",
+        "browserVersion": "122.0",
         "selenoid:options": {
             "enableVNC": True,
-            "enableVideo": False
+            "enableVideo": True
         }
     }
 
